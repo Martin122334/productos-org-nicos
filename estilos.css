@@ -1,6 +1,5 @@
 /* Aquí van los estilos CSS para el index.html del vivero orgánico */
 
-/* Reset general */
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +8,7 @@
     box-sizing: border-box;
 }
 
-/* Tipografía base del sitio */
+/* Aqui le definimos la tipografía base del sitio */
 body {
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 16px;
@@ -17,7 +16,7 @@ body {
     color: #333;
 }
 
-/* Contenedor general */
+/* Le creamos el contenedor general */
 .contenedor {
     width: 90%;
     max-width: 1000px;
@@ -28,7 +27,7 @@ body {
     border-radius: 8px;
 }
 
-/* Estilos del encabezado */
+/* Aqui le definimos los estilos del encabezado */
 header {
     width: 100%;
     background-image: url("img/org\ 1.jpg");/* puedes cambiar la ruta de imagen */
@@ -37,13 +36,13 @@ header {
     background-position: center center;
 }
 
-/* Posicionamiento del contenedor dentro del header */
+/* Le posicionamos el contenedor dentro del header */
 header .contenedor {
     position: relative;
     height: 600px;
 }
 
-/* Menú de navegación */
+/* Los detalles del menú de navegación */
 header .menu {
     width: 100%;
     text-align: right;
@@ -63,7 +62,7 @@ header nav a:hover {
     background-color: #4b754a;
 }
 
-/* Logo o texto lateral */
+/* Los detalles para el logo o texto lateral */
 .cabecera-izquierda {
     position: absolute;
     top: 20px;
