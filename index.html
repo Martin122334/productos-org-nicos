@@ -3,30 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vivero de Productos Orgánicos</title>
+    <title>Vivero Orgánico</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Hoja de estilos -->
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-
+    
     <!--Inicio del header-->
     <header>
         <div class="contenedor">
-            <!-- Aqui definimos el menú de navegación -->
-            <div class="cabecera-derecha">
-                <nav class="menu">
-                    <a href="#" id="btn-inicio">Inicio</a>
-                    <a href="#" id="btn-productos">Productos</a>
-                    <a href="#" id="btn-nosotros">Nosotros</a>
-                    <a href="#" id="btn-contacto">Contacto</a>
-                </nav>
-            </div>
-            <!-- Aqui le damos el logo o nombre del vivero -->
-            <div class="cabecera-izquierda">
-                <a href="#">Productos Orgánicos</a>
+            <nav class="menu">
+                <a href="#">Inicio</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#productos">Productos</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+            <div class="texto">
+                <h1 class="nombre">Vivero <span>Orgánico</span></h1>
+                <h3>Vida natural, desde la raíz hasta tu mesa</h3>
             </div>
         </div>
     </header>
-    <!--Fin del header-->
+    
+    <!--Inicio del main-->
+    <section class="main">
+        
+        <!-- Sección Acerca de -->
+        <section class="acerca-de" id="nosotros">
+            <div class="contenedor">
+                <div class="foto">
+                    <img src="img/org-1.jpg" alt="Vivero orgánico">
+                </div>
+                <article>
+                    <h3>Acerca de Nosotros</h3>
+                    <p>
+                        Nuestro vivero es un espacio dedicado al cultivo de productos 100% orgánicos, libres de químicos y pesticidas, pensados para fomentar una alimentación saludable y consciente.
+                    </p>
+                    <p>
+                        Desde hortalizas frescas hasta plantas aromáticas y medicinales, trabajamos de la mano con pequeños agricultores que comparten nuestra pasión por la tierra y el respeto por el medio ambiente.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección Productos -->
+        <section class="menu" id="productos">
+            <div class="contenedor">
+                <h3 class="titulo">Nuestros Productos</h3>
+                <div class="contenedor-menu2">
+                    <article>
+                        <p class="categoria">Hortalizas</p>
+                        <div class="platillo">
+                            <p class="nombre">Lechuga orgánica</p>
+                            <p class="precio">$1.00</p>
+                            <p class="descripcion">Fresca, crocante, libre de pesticidas.</p>
+                        </div>
+                        <div class="platillo">
+                            <p class="nombre">Zanahorias baby</p>
+                            <p class="precio">$1.20</p>
+                            <p class="descripcion">Ricas en nutrientes, cosechadas a mano.</p>
+                        </div>
+                    </article>
+                    <article>
+                        <p class="categoria">Plantas Aromáticas</p>
+                        <div class="platillo">
+                            <p class="nombre">Hierbabuena</p>
+                            <p class="precio">$1.00</p>
+                            <p class="descripcion">Ideal para infusiones y postres.</p>
+                        </div>
+                        <div class="platillo">
+                            <p class="nombre">Romero</p>
+                            <p class="precio">$1.50</p>
+                            <p class="descripcion">Aromática y medicinal.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    </section><!--Fin del main-->
 
 </body>
 </html>
