@@ -1,139 +1,143 @@
+/*Aqui van los estilos ccs*/
+/* Elimina los márgenes y padding por defecto de todos los elementos HTML */
 * {
     margin: 0;
     padding: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+        /* Establece un modelo de caja uniforme para todos los navegadores */
+    -webkit-box-sizing: border-box; /* Chrome, Safari */
+    -moz-box-sizing: border-box;    /* Firefox */
+    box-sizing: border-box;      /* Todos los demás navegadores */
 }
 
 body {
-    font-family: "Open Sans", Arial, sans-serif;
-    font-size: 16px;
+    font-family: "Open Sans", Arial, sans-serif;    /* Cambia la fuente a Open Sans */
+    font-size: 16px;       /* Establece el tamaño de fuente a 16px */
 }
-
+/* ---------- CONTENEDOR GENERAL ---------- */
 .contenedor {
-    width: 90%;
-    max-width: 1000px;
-    margin: auto;
-    overflow: hidden;
+    width: 90%;  /* Establece el ancho del contenedor al 90% del ancho de la ventana */
+    max-width: 1000px; /* Establece un ancho máximo de 1000px */
+    margin: auto; /* Centra el contenedor horizontalmente */
+    overflow: hidden; /* Oculta el desbordamiento de contenido */
 }
-
+/* ---------- HEADER (encabezado) ---------- */
 header {
-    width: 100%;
-    background: url('./img/bg2.jpg') #693d24;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center 0;
+    width: 100%; /* Establece el ancho del encabezado al 100% */
+        /* Imagen de fondo con color de respaldo por si no carga */
+    background: url('./img/bg2.jpg') #693d24; 
+    background-size: cover;  /*Cubre todo el área del encabezado con la imagen de fondo */
+    background-attachment: fixed;  /* Mantiene la imagen de fondo fija al desplazarse */
+    background-position: center 0;  /* Centra la imagen de fondo en la parte superior */
 }
-
+/* Contenedor dentro del header */
 header .contenedor {
-    position: relative;
-    height: 700px;
+    position: relative;     /* Para posicionar hijos de forma absoluta */
+    height: 700px;          /* Altura fija del header */
 }
-
+/* ---------- MENÚ DE NAVEGACIÓN ---------- */
 header .menu {
-    width: 100%;
-    text-align: right;
+    width: 100%;         /* Ocupa todo el ancho */
+    text-align: right;   /* Alinea los enlaces del menú a la derecha */
 }
-
+/* Estilos a los enlaces del menú */
 header .menu a {
-    color: #fff;
+    color: #fff;   /* Color de texto blanco */
     font-size: 20px;
     font-weight: 300;
     margin: 40px 20px;
     text-decoration: none;
     position: relative;
 }
-
+/* Efecto hover: cambia color y subraya */
 header .menu a:hover {
     color: #18a08c;
     text-decoration: underline;
 }
-
+/* ---------- TEXTO PRINCIPAL EN HEADER ---------- */
 header .texto {
     width: 100%;
     color: #ffffff;
     position: absolute;
-    top: 50%;
-    margin-top: -52px;
+    top: 50%;            /* Lo coloca a la mitad verticalmente */
+    margin-top: -52px;   /* Lo sube un poco para centrar exacto */
 }
-
+/* Nombre destacado en grande */
 header .texto .nombre {
     font-size: 50px;
     font-weight: 600;
 }
-
+/* Parte ligera del nombre */
 header .texto .nombre span {
     font-weight: 300;
 }
-
+/* Subtítulo o descripción */
 header .texto h3 {
     font-weight: 300;
     font-size: 25px;
     font-style: italic;
 }
 
-/* MAIN */
+/* ---------- SECCIÓN MAIN (contenido principal) ---------- */
 .main {
-    background-image: url(./img/bgc.jpg);
+    background-image: url(./img/bgc.jpg); /* Imagen de fondo repetida */
     background-repeat: repeat;
 }
 
-/* Sección Acerca de */
+/* ---------- SECCIÓN "Acerca de" ---------- */
 .main .acerca-de .contenedor {
-    overflow: visible;
+    overflow: visible;  /* Permite que sobresalga contenido */
     position: relative;
 }
-
+/* Imagen flotante al lado del texto */
 .main .acerca-de .foto {
     width: 80%;
     position: absolute;
     left: 0;
     top: -50px;
-    z-index: 0;
+    z-index: 0; /* Por debajo del artículo */
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
 }
-
+/* Ajuste de imagen */
 .main .acerca-de .foto img {
     vertical-align: top;
     width: 100%;
 }
-
+/* Caja de texto al lado de la imagen */
 .main .acerca-de article {
     background: #fff;
     padding: 20px;
     width: 75%;
     position: relative;
     top: 50px;
-    z-index: 1;
+    z-index: 1; /* Por encima de la imagen */
     float: right;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
 }
-
+/* Título dentro del artículo */
 .main .acerca-de article h3 {
     font-size: 50px;
     font-weight: 300;
     margin-bottom: 40px;
 }
-
+/* Párrafos del artículo */
 .main .acerca-de article p {
     line-height: 20px;
     margin-bottom: 15px;
 }
 
-/* Sección Productos */
+/* ---------- SECCIÓN MENÚ DE PRODUCTOS ---------- */
 .main .menu {
-    padding-top: 630px;
+    padding-top: 630px;   /* Espacio para que baje el contenido */
     margin-bottom: 50px;
 }
-
+/* Título del menú */
 .main .menu .titulo {
     font-size: 40px;
     font-weight: 300;
     text-align: center;
     margin-bottom: 40px;
 }
-
+/* Contenedores para la lista de productos */
 .main .menu .contenedor-menu,
 .main .menu .contenedor-menu2 {
     border: 2px solid #000;
@@ -142,13 +146,13 @@ header .texto h3 {
     overflow: hidden;
     box-shadow: 15px 0px 15px 0 rgba(0, 0, 0, 0.5);
 }
-
+/* Cada columna de platillos o productos */
 .main .menu article {
     width: 50%;
     float: left;
     padding: 20px;
 }
-
+/* Nombre de cada categoría (como "frutas", "verduras") */
 .main .menu .categoria {
     font-size: 22px;
     font-weight: 700;
@@ -156,6 +160,7 @@ header .texto h3 {
     text-align: center;
 }
 
+/*Caja para cada producto individual*/
 .main .menu .platillo {
     margin-bottom: 30px;
     padding-bottom: 20px;
