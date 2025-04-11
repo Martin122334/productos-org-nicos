@@ -1,4 +1,4 @@
-/*Aqui van los estilos ccs*/
+/*Aqui van los estilos
 /* Elimina los márgenes y padding por defecto de todos los elementos HTML */
 * {
     margin: 0;
@@ -136,6 +136,7 @@ header .texto h3 {
     font-weight: 300;
     text-align: center;
     margin-bottom: 40px;
+    color: brown;
 }
 /* Contenedores para la lista de productos */
 .main .menu .contenedor-menu,
